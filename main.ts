@@ -9,6 +9,7 @@ import {
   GitHubGistEmbed,
   InstagramEmbed,
   NoteflightEmbed,
+  SpotifyEmbed,
   RedditEmbed,
   TwitterEmbed,
   VimeoEmbed,
@@ -35,6 +36,7 @@ export default class SimpleEmbedsPlugin extends Plugin {
     new BandcampEmbed(),
     new VimeoEmbed(),
     new RedditEmbed(),
+    new SpotifyEmbed(),
   ];
   processedMarkdown: Debouncer<[]>;
   currentTheme: "dark" | "light";
